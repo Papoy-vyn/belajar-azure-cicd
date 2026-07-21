@@ -1,0 +1,19 @@
+name: Belajar CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  cek-website:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Ambil kode
+      uses: actions/checkout@v4
+
+    - name: Cek file
+      run: ls
